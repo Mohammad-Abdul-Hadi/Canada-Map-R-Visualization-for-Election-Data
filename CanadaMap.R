@@ -1,10 +1,20 @@
-install.packages("sf")
-install.packages("rgdal")
-install.packages("geojsonio")
-install.packages("spdplyr")
-install.packages("rmapshaper")
-install.packages("tidyverse")
-install.packages("socviz")
+# my_packages <- c("tidyverse", "broom", "coefplot", "cowplot",
+#                  "gapminder", "GGally", "ggrepel", "ggridges", "gridExtra",
+#                  "here", "interplot", "margins", "maps", "mapproj",
+#                  "mapdata", "MASS", "quantreg", "rlang", "scales",
+#                  "survey", "srvyr", "viridis", "viridisLite", "devtools")
+# 
+# install.packages(my_packages, repos = "http://cran.rstudio.com")
+# 
+# devtools::install_github("kjhealy/socviz")
+
+# install.packages("sf")
+# install.packages("rgdal")
+# install.packages("geojsonio")
+# install.packages("spdplyr")
+# install.packages("rmapshaper")
+# install.packages("tidyverse")
+# install.packages("socviz")
 
 library(geojsonio)
 library(rmapshaper)
@@ -35,16 +45,16 @@ theme_map <- function(base_size=9, base_family="") {
 theme_set(theme_map())
 
 ## Make a "figures" directory if one doesn't exist
-ifelse(!dir.exists(file.path("figures")), dir.create(file.path("figures")), FALSE)
+ifelse(!dir.exists(file.path("C:/Users/mashuk/Documents/GitHub/Canada-Map-R-Visualization-for-Election-Data/figures")), dir.create(file.path("figures")), FALSE)
 
-canada_raw <- readOGR(dsn = "data", layer = "gcd_000b11a_e", use_iconv=TRUE, encoding="utf8")
+canada_raw <- readOGR(dsn = "C:/Users/mashuk/Documents/GitHub/Canada-Map-R-Visualization-for-Election-Data/data", layer = "gcd_000b11a_e", use_iconv=TRUE, encoding="utf8")
 
 canada_raw_json <- geojson_json(canada_raw)
 canada_raw_sim <- ms_simplify(canada_raw_json)
 
-geojson_write(canada_raw_sim, file = "data/canada_cd_sim.geojson")
+geojson_write(canada_raw_sim, file = "C:/Users/mashuk/Documents/GitHub/Canada-Map-R-Visualization-for-Election-Data/data/canada_cd_sim.geojson")
 
-canada_cd <- st_read("data/canada_cd_sim.geojson", quiet = TRUE)
+canada_cd <- st_read("C:/Users/mashuk/Documents/GitHub/Canada-Map-R-Visualization-for-Election-Data/data/canada_cd_sim.geojson", quiet = TRUE)
 canada_cd
 
 canada_cd <- st_transform(canada_cd, crs = "+proj=lcc +lat_1=49 +lat_2=77 +lon_0=-91.52 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs")
@@ -62,5 +72,5 @@ p_out <- p + geom_sf(color = "gray60",
   theme_map() + 
   theme(panel.grid.major = element_line(color = "white"),
         legend.key = element_rect(color = "gray40", size = 0.1))
-ggsave("figures/canada.pdf", p_out, height = 12, width = 15)
+ggsave("C:/Users/mashuk/Documents/GitHub/Canada-Map-R-Visualization-for-Election-Data/figures/canada.jpg", p_out, height = 12, width = 15)
 p_out
