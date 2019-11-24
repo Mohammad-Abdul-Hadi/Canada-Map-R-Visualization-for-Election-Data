@@ -8,7 +8,7 @@
 <ul style="list-style-type:square;>
   <li><h3><u>Summary of the data</u></h3></li>
   <p>For the project, a composite database has been used which will be comprised of two datasets of the same domain (Canadian Federal Election): one form <i>Kaggle</i> (data from 1997 to 2015) and another from <i>Sayers, 2017</i> (data from 1867 to 2015). Details of these datasets are mentioned below:</p>
-  li><h3><u>Sources</u></h3></li>
+  <li><h3><u>Sources</u></h3></li>
     <ol type="a">
       <li>Kaggle Dataset:</li>
       <br>
