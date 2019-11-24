@@ -20,4 +20,4 @@
 </ul>
 <b>Example:</b>
 <br>
-<iframe src="/figures/canada.pdf" width="100%" height="500px"></iframe>
+![Image of Canad Map](https://github.com/Mohammad-Abdul-Hadi/Canada-Map-R-Visualization-for-Election-Data/blob/master/figures/Capture.PNG)
