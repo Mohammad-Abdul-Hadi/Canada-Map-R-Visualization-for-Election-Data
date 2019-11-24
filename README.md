@@ -18,3 +18,6 @@
       <p>Sayers, A.M. (2017). Canadian Elections Database. Retrieved 15 October 2019, from http://canadianelectionsdatabase.ca</p>
     </ol>
 </ul>
+<b>Example:</b>
+<br>
+<iframe src="/figures/canada.pdf" width="100%" height="500px"></iframe>
