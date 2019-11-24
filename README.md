@@ -20,4 +20,4 @@
 </ul>
 <b>Example:</b>
 <br>
-![Image of Canad Map](https://github.com/Mohammad-Abdul-Hadi/Canada-Map-R-Visualization-for-Election-Data/blob/master/figures/Capture.PNG)
+![Image of Canad Map](https://raw.githubusercontent.com/Mohammad-Abdul-Hadi/Canada-Map-R-Visualization-for-Election-Data/master/figures/Capture.PNG)
