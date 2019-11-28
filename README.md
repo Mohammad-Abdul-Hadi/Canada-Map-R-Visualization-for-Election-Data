@@ -21,3 +21,5 @@
 <b>Example:</b>
 
 ![Image of Canada Map](https://raw.githubusercontent.com/Mohammad-Abdul-Hadi/Canada-Map-R-Visualization-for-Election-Data/master/figures/Capture.PNG)
+
+Thanks to : Data Visualization: A Practical Introduction - Kieran Healy
