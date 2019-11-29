@@ -3,7 +3,7 @@
 <br>
 <p>Designed an interactive geo-spatial visualization where Canada’s territories/provinces will be color-coded by their choice of parties in a selected election year and some other necessary, meaningful data can be represented in an effective manner through visually formatted information.</p>
 
-<p>Elections data has many applications; we can analyze the data and search for trends by looking at party support over time, or the geographic trends of party support within a single election.</p>
+<p>Elections data has many applications; we can analyze the data and search for trends by looking at party support over time, or the geographic trends of party support within for future election. A scraper was developed to scrape through "Canadian Elections Databese" to accumulate the information of all the past Federal and Provincial Election. Details about the scraper can be found in the following link: https://github.com/Mohammad-Abdul-Hadi/scraper-for-canadianelectionsdatabase.ca</p>
 
 <ul style="list-style-type:square;>
   <li><h3><u>Summary of the data</u></h3></li>
