@@ -22,4 +22,5 @@
 
 ![Image of Canada Map](https://raw.githubusercontent.com/Mohammad-Abdul-Hadi/Canada-Map-R-Visualization-for-Election-Data/master/figures/CanadaMapRaw.jpg)
 
-Thanks to : Data Visualization: A Practical Introduction - Kieran Healy
+## Citation:
+Data Visualization: A Practical Introduction - Kieran Healy
